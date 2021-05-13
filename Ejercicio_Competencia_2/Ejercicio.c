@@ -38,19 +38,18 @@ printf("\nPrimer elemento del array [arrayInt]: %i",arrayInt[0]);
 printf("\nPrimer elemento del puntero [punteroInt]: %i",*punteroInt);
 printf("\nPrimer elemento del puntero [punteroIntDos]: %i",*punteroIntDos);
 printf("\nQuinto elemento del array [arrayInt]: %i",arrayInt[4]);
-printf("\nQuinto elemento del puntero [punteroInt]: %i",punteroInt[4]);
-printf("\nQuinto elemento del puntero [punteroIntDos]: %i",punteroIntDos[4]);
+printf("\nQuinto elemento del puntero [punteroInt]: %i",*punteroInt+4);
+printf("\nQuinto elemento del puntero [punteroIntDos]: %i",*punteroIntDos+4);
 
 for(int i=0;i<5;i++){
-	printf("\npuntero [punteroInt][%i]: %i",i,punteroInt[i]);
+	printf("\npuntero [punteroInt][%i]: %i",i,*punteroInt++);
 }
 
 for(int i=0;i<5;i++){
-	printf("\npuntero [punteroIntDos][%i]: %i",i,punteroIntDos[i]);
+	printf("\npuntero [punteroIntDos][%i]: %i",i,*punteroIntDos++);
 }
 
 printf("\n\n");
-
 
 return 0;
 }
