@@ -27,7 +27,7 @@ printf("\nContenido del puntero [Puntero]: %i",*puntero);
 printf("\n\n\nSegundo ejercicio.\n");
 int arrayInt[5];
 
-for(int i=0;i<=sizeof(arrayInt);i++){
+for(int i=0;i<5;i++){
 	arrayInt[i]=i;
 }
 
