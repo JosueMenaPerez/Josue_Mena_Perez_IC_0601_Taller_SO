@@ -59,7 +59,8 @@ crearUsuario(){
 		  useradd -u "${UserID}" -c "${UserIDinf}" -s "${ComandSell}" -g "${GroupID}" -m -d "${HomeDir}" "${username}"
 		  #Indica la contraseña que se le asignará al usuario
 		  echo "${username}:${password}" | chpasswd --md5
-		  echo "---------------------------------------------------"
+		  
+		  echo "***************************************************"
 		fi
 	else
 		#Imprime un mensaje en dado caso que el grupo no exista y no deja crear el usuario.
